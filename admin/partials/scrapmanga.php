@@ -12,5 +12,17 @@
                 <button id="view-chapters" class="inline-flex items-center text-white bg-primary hover:bg-blue-600 focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5">View Chapters</button>
             </div>
         </div>
+
+        <div class="p-3">
+            <div id="form_scrapper" class="w-full"">
+                <div class="mb-4">
+                    <h4 class="text-sm">List Chapters</h4>
+                   
+                </div>
+
+                <button id="view-chapters" class="inline-flex items-center text-white bg-primary hover:bg-blue-600 focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5">View Chapters</button>
+            </div>
+        </div>
+
     </div>
 </div>

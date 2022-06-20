@@ -22,6 +22,11 @@ class SCRAPMANGA_Admin {
         if( isset($_GET['page']) ){
             if( $_GET['page'] == 'scrapmanga' ){
                 wp_enqueue_script( 'scrapmanga_functions_js', SCRAPMANGA_DIR_URI . 'admin/js/scrapmanga_functions.js', [], filemtime(SCRAPMANGA_DIR_PATH . 'admin/js/scrapmanga_functions.js'), true );
+                $scrapmanga_Admin = [
+                    'url'   => admin_url( 'admin-ajax.php' ),
+                    'nonce' => wp_create_nonce( 'scrapmanga_seg' ),
+                ];
+                wp_localize_script( 'scrapmanga_functions_js', 'scrapmanga_Admin', $scrapmanga_Admin );
             }
         }
     }
